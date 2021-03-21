@@ -34,26 +34,20 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Map;
 
-@Controller
 @SpringBootApplication
 public class Main {
 
-  @Value("${spring.datasource.url}")
-  private String dbUrl;
+  // @Value("${spring.datasource.url}")
+  //private String dbUrl;
 
-  @Autowired
-  private DataSource dataSource;
+  //@Autowired
+  //private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
 
-  @RequestMapping("/")
-  String index() {
-    return "index";
-  }
-
-  @RequestMapping("/db")
+  /* @RequestMapping("/db")
   String db(Map<String, Object> model) {
     try (Connection connection = dataSource.getConnection()) {
       Statement stmt = connection.createStatement();
@@ -83,6 +77,6 @@ public class Main {
       config.setJdbcUrl(dbUrl);
       return new HikariDataSource(config);
     }
-  }
+  } */
 
 }
