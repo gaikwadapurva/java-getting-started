@@ -49,7 +49,51 @@
   <br/><br/>
 </div>
 
-<div th:include="/fragments/footer"></div>
+<footer class="py-3 bg-dark text-center text-white">
+  <div class="container text-justify">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="footer-widget">
+          <h4>About FarmwayFresh</h4>
+          <p>This web application is just an initiative to help farmers directly connect to consumers and vice versa.</p>
+          <p>The main objective behind developing this application is to eliminate the involvement of wholesalers in the middle due to which the goods reaching consumers are over-rated.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="footer-link">
+          <h4>&nbsp;&nbsp;Information</h4>
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="terms-and-conditions" th:href="@{/terms-and-conditions}">Terms &amp; Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy-policy" th:href="@{/privacy-policy}">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delivery-info" th:href="@{/delivery-info}">Delivery Information and Rules</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="footer-link-contact">
+          <h4>&nbsp;&nbsp;Contact Us</h4>
+          <ul>
+            <li>
+              <p><i class="fas fa-map-marker-alt"></i>Address: The Untraceable Villa,<br/>Borivli, Mumbai,<br/>Maharashtra, India</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-9284425490">+91-9284425490</a></p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope"></i>Email: <a href="mailto:farmwayfresh@gmail.com">farmwayfresh@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
