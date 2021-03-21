@@ -2,23 +2,23 @@
 <html th:fragment="layout (template, menu)">
 <head>
     <title>Java Getting Started on Heroku</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#" th:href="@{/}">FarmwayFresh</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="home" th:href="@{/}">Home</a></li>
-            <li><a href="about-us" th:href="@{/about-us}">About Us</a></li>
-            <li><a href="contact-us" th:href="@{/contact-us}">Contact Us</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="home" th:href="@{/}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us" th:href="@{/about-us}">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact-us" th:href="@{/contact-us}">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" th:href="@{/login}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
     </div>
 </nav>
