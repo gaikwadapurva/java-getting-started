@@ -10,4 +10,14 @@ public class HomeController {
     public String home() {
         return "home";
     }
+
+    @RequestMapping("/about-us")
+    public String aboutUs() {
+        return "about-us";
+    }
+
+    @RequestMapping("/contact-us")
+    public String contactUs() {
+        return "contact-us";
+    }
 }
