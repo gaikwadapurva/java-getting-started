@@ -20,4 +20,9 @@ public class HomeController {
     public String contactUs() {
         return "contact-us";
     }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
 }
