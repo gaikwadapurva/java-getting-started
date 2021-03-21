@@ -25,4 +25,19 @@ public class HomeController {
     public String login() {
         return "login";
     }
+
+    @RequestMapping("/privacy-policy")
+    public String privacyPolicy() {
+        return "privacy-policy";
+    }
+
+    @RequestMapping("/terms-and-conditions")
+    public String termsAndConditions() {
+        return "terms-and-conditions";
+    }
+
+    @RequestMapping("/delivery-info")
+    public String deliveryInfo() {
+        return "delivery-info";
+    }
 }

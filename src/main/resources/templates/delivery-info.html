@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'delivery-info')}">
+
+<body>
+
+<div class="container text-justify">
+    <br><br><br>
+    <h1 style="color:blue;">Delivery Information and Rules</h1>
+    <p><span><strong>&nbsp;</strong></span><strong>1. General Information</strong></p>
+    <p><span style="font-weight: lighter;">All orders are subject to product availability. If an item is not in stock at the time you place your order, we will notify you and refund you the total amount of your order, using the original method of payment.</span><strong>&nbsp;</strong></p>
+    <p><span><strong>2. Delivery Location</strong></span></p>
+    <p><span>Items offered on our website are only available for delivery to addresses in </span><span><strong>India</strong></span><span>. </span>We also accept orders from international customers who are shipping to addresses in India only. Any shipments outside <span><strong>India</strong></span> are not available at this time.</span></p>
+    <p><span><strong>3. Delivery Time</strong></span></p>
+    <p><span>An estimated delivery time will be provided to you once your order is placed. Delivery times are estimates and commence from the date of shipping, rather than the date of order. Delivery times are to be used as a guide only and are subject to the acceptance and approval of your order.</span></p>
+    <p><span>Unless there are exceptional circumstances, we make every effort to fulfill your order within [15] business days of the date of your order. Business day mean Monday to Friday, except holidays.</span></p>
+    <p><span>Please note we do not ship on [Sundays].</span></p>
+    <p><span>Date of delivery may vary due to carrier shipping practices, delivery location, method of delivery, and the items ordered. Products may also be delivered in separate shipments.</span></p>
+    <p><span><strong>4. Delivery Instructions</strong></span></p>
+    <p><span><strong>You can provide special delivery instructions on the check-out page of our website.</strong></span></p>
+    <p><span><strong>5. Shipping Costs</strong></span></p>
+    <p><span>Shipping costs are based on the weight of your order and the delivery method. To find out how much your order will cost, simple add the items you would like to purchase to your cart, and proceed to the checkout page. Once at the checkout screen, shipping charges will be displayed.</span></p>
+    <p><span>Additional shipping charges may apply to remote areas or for large or heavy items. You will be advised of any charges on the checkout page.</span></p>
+    <p><span>Sales tax is charged according to the province or territory to which the item is shipped.</span></p>
+    <p><span><strong>6. Damaged Items in Transport</strong></span><span style="font-weight: lighter;">&nbsp;</span></p>
+    <p><span>If there is any damage to the packaging on delivery, contact us immediately.</span></p>
+    <p><span><strong>7. Questions</strong></span></p>
+    <p><span>If you have any questions about the delivery and shipment or your order, please contact us.</span></p>
+
+</div>
+
+<footer class="py-3 bg-dark text-center text-white">
+    <div class="container text-justify">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                    <h4>About FarmwayFresh</h4>
+                    <p>This web application is just an initiative to help farmers directly connect to consumers and vice versa.</p>
+                    <p>The main objective behind developing this application is to eliminate the involvement of wholesalers in the middle due to which the goods reaching consumers are over-rated.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link">
+                    <h4>&nbsp;&nbsp;Information</h4>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms-and-conditions" th:href="@{/terms-and-conditions}">Terms &amp; Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy-policy" th:href="@{/privacy-policy}">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery-info" th:href="@{/delivery-info}">Delivery Information and Rules</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link-contact">
+                    <h4>&nbsp;&nbsp;Contact Us</h4>
+                    <ul>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt"></i>Address: The Untraceable Villa,<br/>Borivli, Mumbai,<br/>Maharashtra, India</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-9284425490">+91-9284425490</a></p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope"></i>Email: <a href="mailto:farmwayfresh@gmail.com">farmwayfresh@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
