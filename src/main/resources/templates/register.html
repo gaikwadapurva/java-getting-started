@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'login')}">
+
+<body>
+
+<div class="container text-center">
+    <br><br><br>
+    <div class="main-content">
+        <form modelAttribute="formbindingobj" class="form-register" method="post" onsubmit="return validate();">
+            <div class="form-register-with-email">
+                <div class="form-white-background">
+                    <div class="form-title-row">
+                        <h1>Register</h1>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label>
+                            <span>Firstname</span>
+                            <input type="text" path ="customer.firstname" name="firstname" id="firstname" placeholder="enter firstname"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Lastname</span>
+                            <input type="text" path ="customer.lastname" name="lastname" id="lastname" placeholder="enter lastname"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="text" path ="customer.emailid" name="email" id="emailId" placeholder="enter email"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" path ="customer.password" name="password" id="password" placeholder="enter password"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Phone Number</span>
+                            <input  path="customer.phno" id="phno" placeholder="enter phno"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Address</span>
+                            <input type="text" path="billingAddressCustomer.address" name="address" id="address" placeholder="Apt., Bldg., Road, Town"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>City</span>
+                            <input type="text" path="billingAddressCustomer.city" name="city" id="city" placeholder="enter city"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Zipcode</span>
+                            <input type="text" path="billingAddressCustomer.zipcode" name="zipcode" id="zipcode" placeholder="enter zipcode/pincode"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>State</span>
+                            <input type="text" path="billingAddressCustomer.state" name="state" id="state" placeholder="enter state"/>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label>
+                            <span>Country</span>
+                            <input type="text" path="billingAddressCustomer.country" name="country" id="country" placeholder="enter country"/>
+                        </label>
+                    </div>
+                    <input type="submit" name="btn_register" value="Register">
+                </div>
+                <a  href="#" th:href="@{/login}" class="form-log-in-with-existing">Already have an account? <b> Login here </b></a>
+            </div>
+        </form>
+    </div>
+    <br><br><br>
+</div>
+
+<footer class="py-3 bg-dark text-center text-white">
+    <div class="container text-justify">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-widget">
+                    <h4>About FarmwayFresh</h4>
+                    <p>This web application is just an initiative to help farmers directly connect to consumers and vice versa.</p>
+                    <p>The main objective behind developing this application is to eliminate the involvement of wholesalers in the middle due to which the goods reaching consumers are over-rated.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link">
+                    <h4>&nbsp;&nbsp;Information</h4>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms-and-conditions" th:href="@{/terms-and-conditions}">Terms &amp; Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy-policy" th:href="@{/privacy-policy}">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="delivery-info" th:href="@{/delivery-info}">Delivery Information and Rules</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="footer-link-contact">
+                    <h4>&nbsp;&nbsp;Contact Us</h4>
+                    <ul>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt"></i>Address: The Untraceable Villa,<br/>Borivli, Mumbai,<br/>Maharashtra, India</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-9284425490">+91-9284425490</a></p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope"></i>Email: <a href="mailto:farmwayfresh@gmail.com">farmwayfresh@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

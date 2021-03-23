@@ -40,4 +40,9 @@ public class HomeController {
     public String deliveryInfo() {
         return "delivery-info";
     }
+
+    @RequestMapping("/register")
+    public String register() {
+        return "register";
+    }
 }
