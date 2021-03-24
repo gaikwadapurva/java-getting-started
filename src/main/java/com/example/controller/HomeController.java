@@ -41,5 +41,13 @@ public class HomeController {
         return "delivery-info";
     }
 
+    @RequestMapping("/register-farmer")
+    public String registerFarmer() {
+        return "register-farmer";
+    }
 
+    @RequestMapping("/register-customer")
+    public String registerCustomer() {
+        return "register-customer";
+    }
 }
